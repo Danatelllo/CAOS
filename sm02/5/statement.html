@@ -1,0 +1,24 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem sm02-5: asm/algorithms/dlinko</h3>
+<p>Напишите функцию supersum складывающую беззнаковые "длинные" little-endian числа C = A + B.</p>
+<p>В регистре eax передается указатель на число A, в ebx - указатель на B, в ecx - указатель на С.</p>
+<p>В esi лежит размер числа A, в edi размер числа B в байтах.</p>
+<p>Программа возвращает 1 + индекс последнего ненулевого байта числа C в регистре eax (иными словами размер числа C).</p>
+<p>Размер числа 0 - 0.</p>
+<p>Гарантируется, что размер буфера C &gt; max(размер A, размер B).</p>
+<p>Не забывайте сохранять значения регистров, которые нельзя портить.</p>
+<p>Инструкции pushf и popf выглядят надежными и кладут/забирают аж четыре байта на стек.</p>
+<p>Входные числа могут содержать старшие нулевые байты.</p>
+<p>Вы можете протестировать функцию со <a href="https://gist.github.com/ObjatieGroba/cf373ad19998e8f04701997355d5f396">следующими файлами</a></p>
+<h3>Examples</h3><h4>Input</h4>
+<pre>3 1
+abcdef
+ff</pre>
+<h4>Output</h4>
+<pre>aaceef</pre>
+</body></html>

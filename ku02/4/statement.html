@@ -1,0 +1,22 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem ku02-4: c/ints/simple-ub-1</h3>
+<p>Напишите функцию, принимающую строки val1 и val2, содержащие два 32-битных знаковых целых числа,
+      записанных в <b>13-ричной</b> системе счисления.</p>
+<tt>void please_compute_and_print_some_strange_values_from_some_other_strange_values(const char *val1, const char *val2)</tt>
+<p>Функция должна печатать на стандартный поток вывода два булевских значения (0 или 1), каждое на отдельной строке:</p>
+<ul>
+<li>Первое булевское значение равно 1, если сложение (val1 + val2) по правилам Си приводит к undefined behavior, и 0 в противном случае.</li>
+<li>Второе булевское значение равно 1, если деление (val1 / val2) по правилам Си приводит к undefined behavior, и 0 в противном случае.</li>
+</ul>
+<p>Например, вызов</p>
+<tt>please_compute_and_print_some_strange_values_from_some_other_strange_values("25b47736b", "25b47736c");  // в десятичной системе: 2000000000, 2000000001</tt>
+<p>Должен вывести</p>
+<pre>1
+0</pre>
+<p>Гарантируется что указатели указывают на корретные строки с числами (в частности, не равны NULL).</p>
+<p> </p></body></html>

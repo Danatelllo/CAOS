@@ -1,0 +1,33 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem ku02-2: c/data-structures/push-pop-dlink-list</h3>
+<p>Реализуйте нижеописанные функции <code>push</code> и <code>pop</code> над двусвязным списком.</p>
+<p>В тестирующей системе доступен заголовочный файл <a href="https://caos.myltsev.ru/cgi-bin/new-client?SID=14a64f66213474e6&amp;prob_id=56&amp;action=194&amp;file=dlist.h"><code>dlist.h</code></a>,
+        который вы можете включить директивой #include.</p>
+<p>В заголовочном файле определён тип <code>Node</code> - вершина двусвязного списка,
+            и объявлены функции, которые необходимо реализовать.</p>
+<pre>typedef struct Node {
+    struct Node *prev;
+    struct Node *next;
+    int value;
+} Node;
+
+Node *push(Node *place, int value);
+int pop(Node *node);</pre>
+<p>Функция <code>push</code> создает новую <code>Node</code> со значением <code>value</code>
+        и вставляет ее перед вершиной <code>place</code>. Функция возвращает созданную на куче вершину.</p>
+<p>Если <code>place == NULL</code>, то список пустой.</p>
+<p>В случае неуспешной аллокации возвращайте <code>NULL</code></p>
+<p>Функция <code>pop</code> вынимает вершину из списка, высвобождает память вершины
+        и возвращает число из этой вершины. Гарантируется, что аргумент pop не равен NULL.</p>
+<p>Пример использования:</p>
+<pre>Node * head = NULL;
+head = push(head, 1);
+head = push(head, 2);
+pop(head-&gt;next) == 1;
+pop(head) == 2;</pre>
+<p> </p></body></html>

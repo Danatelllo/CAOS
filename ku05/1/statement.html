@@ -1,0 +1,35 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem ku05-1: kr05-1 (дореш)</h3>
+<p>Напишите программу, принимающую первым аргументом строку и проверяющую, что эта строка является
+        "полноценной" с точки зрения языка си.</p>
+<p>Строка является "полноценной" если она компилируется как тело функции без аргументов и возвращаемого значения
+            и не зависит от переменных/функций (символов) не объявленных в этой же строке.</p>
+<p>В случае если строка валидная необходимо вывести Valid, иначе Invalid</p>
+<p>Программа должна завершиться с exit code 0</p>
+<p>Гарантируется, что в строке нет символов '{' и '}'.</p>
+<h3>Examples</h3><h4>Input</h4>
+<pre>1 + 2 + 3</pre>
+<h4>Output</h4>
+<pre>Valid</pre>
+<h4>Input</h4>
+<pre>1 + 2 +</pre>
+<h4>Output</h4>
+<pre>Invalid</pre>
+<h4>Input</h4>
+<pre>int x = 0; x + 3</pre>
+<h4>Output</h4>
+<pre>Valid</pre>
+<h4>Input</h4>
+<pre>int x; x + 3</pre>
+<h4>Output</h4>
+<pre>Valid</pre>
+<h4>Input</h4>
+<pre>y + 4</pre>
+<h4>Output</h4>
+<pre>Invalid</pre>
+<p> </p></body></html>

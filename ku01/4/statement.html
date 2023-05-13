@@ -1,0 +1,22 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem ku01-4: asm/stack/args-fwd-1</h3>
+<p>На языке ассемблера напишите функцию <tt>my.args.forward</tt> (имя содержит точки),
+принимающую аргументы <tt>int v1</tt>, <tt>long long v2</tt>, <tt>int v3</tt>
+и возвращающую значение типа <tt>int</tt>.</p>
+<p>Эта функция должна вызвать функцию <tt>process</tt> с прототипом:</p>
+<pre>int process(int v3, int v1, long long v2)</pre>
+<p>передавая параметр с соответствующим именем на соответствующем месте.
+Результат функции <tt>process</tt> возвращается со сменой знака из функции
+<tt>my.args.forward</tt>.</p>
+<p>Например, если функция <tt>my.args.forward</tt> была вызвана с параметрами
+1, 2LL, 3, то функция <tt>process</tt> должна быть вызвана с параметрами
+3, 1, 2LL. Если функция <tt>process</tt> возвращает значение 4,
+то функция <tt>my.args.forward</tt> должна вернуть значение -4.</p>
+<p>На проверку требуется сдать только реализацию функции <tt>my.args.forward</tt>
+на ассемблере x86. Функция должна соблюдать стандартные соглашения о вызове и создавать свой стековый фрейм.</p>
+<p> </p></body></html>

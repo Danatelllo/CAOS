@@ -1,0 +1,3 @@
+/home/danila/kks/sm09/cmake-build-debug/CMakeFiles/sm09.dir
+/home/danila/kks/sm09/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/danila/kks/sm09/cmake-build-debug/CMakeFiles/rebuild_cache.dir

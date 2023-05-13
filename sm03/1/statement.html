@@ -1,0 +1,25 @@
+<html><head><meta charset="utf-8"/></head>
+<body>
+<table border="1"><tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+<tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+<tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+</table>
+<h3>Problem sm03-1: asm/ints/sum</h3>
+<p>Напишите программу печатающую сумму последовательности знаковых чисел типа int (int32_t).</p>
+<p>На вход подаётся последовательность 32-битных знаковых чисел.</p>
+<p>Для ввода чисел используйте вызов функции <code>scanf("%d", &amp;var)</code>, где <code>&amp;var</code> указатель на вашу переменную.</p>
+<p>Функция scanf возвращает количество успешно считанных элементов или отрицательно число - ошибку.</p>
+<p>Для вывода используйте вызов функции <code>printf("%d\n", var)</code>.</p>
+<p>Можно считать что функция printf не возвращает ошибку.</p>
+<p>В случае переполнения при подсчете суммы необходимо вывести "Overflow" (<code>printf("%s\n", "Overflow")</code> - вызов функции с двумя аргументами - указателями на соответвующие строки) и завершить программу.</p>
+<p>Для хранения строковых констант используйте read only секции: <code>.section .rodata</code> или <code>.text</code></p>
+<p>Для корректного завершения программы main должен вернуть 0.</p>
+<h3>Examples</h3><h4>Input</h4>
+<pre>1 2 3 4 5</pre>
+<h4>Output</h4>
+<pre>15</pre>
+<h4>Input</h4>
+<pre>2000000000 2000000000 1</pre>
+<h4>Output</h4>
+<pre>Overflow</pre>
+</body></html>
